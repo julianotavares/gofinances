@@ -8,20 +8,12 @@ interface ContainerProps {
 export const Container = styled.View<ContainerProps>`
   width: 100%;
 
-<<<<<<< HEAD
-  background: ${({ theme }) => theme.colors.shape};
-=======
   background-color: ${({ theme }) => theme.colors.shape};
->>>>>>> main
 
   flex-direction: row;
   justify-content: space-between;
 
-<<<<<<< HEAD
-  padding: 12px 24px;
-=======
   padding: 13px 24px;
->>>>>>> main
 
   border-radius: 5px;
   border-left-width: 5px;
@@ -33,20 +25,13 @@ export const Container = styled.View<ContainerProps>`
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.fonts.regular};
   font-size: ${RFValue(15)}px;
-<<<<<<< HEAD
-=======
 
   color: ${({ theme }) => theme.colors.title};
->>>>>>> main
 `;
 
 export const Amount = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
   font-size: ${RFValue(15)}px;
-<<<<<<< HEAD
-`;
-=======
 
   color: ${({ theme }) => theme.colors.title};
 `;
->>>>>>> main

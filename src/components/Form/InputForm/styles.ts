@@ -10,10 +10,5 @@ export const Error = styled.Text`
   font-family: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme }) => theme.colors.attention};
 
-<<<<<<< HEAD
-  margin: 7px 0;
-`;
-=======
   margin: 7px;
 `;
->>>>>>> main
