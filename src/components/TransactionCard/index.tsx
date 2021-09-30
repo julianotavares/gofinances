@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
 import { categories } from '../../utils/categories';
@@ -6,6 +7,24 @@ import * as S from './styles';
 
 export interface TransactionCardProps {
   type: 'positive' | 'negative';
+=======
+import React from 'react';
+import { categories } from '../../utils/categories';
+
+import { 
+  Container,
+  Title,
+  Amount,
+  Footer,
+  Category,
+  Icon,
+  CategoryName,
+  Date
+} from './styles';
+
+export interface TransactionCardProps {
+  type: 'positive' | 'negative'
+>>>>>>> main
   name: string;
   amount: string;
   category: string;
@@ -17,6 +36,7 @@ interface Props {
 }
 
 export function TransactionCard({ data }: Props) {
+<<<<<<< HEAD
   const [category] = categories.filter(item => item.key === data.category);
   return (
     <S.Container>
@@ -38,3 +58,26 @@ export function TransactionCard({ data }: Props) {
     </S.Container>
   );
 }
+=======
+  const category = categories.find(item => item.key === data.category)
+  
+  return (
+    <Container>
+      <Title>{data.name}</Title>
+
+      <Amount type={data.type}>
+        {data.type === 'negative' && '- '}
+        {data.amount}
+      </Amount>
+
+      <Footer>
+        <Category>
+          <Icon name={category?.icon} />
+          <CategoryName>{category?.name}</CategoryName>
+        </Category>
+        <Date>{data.date}</Date>
+      </Footer>
+    </Container>
+  )
+}
+>>>>>>> main

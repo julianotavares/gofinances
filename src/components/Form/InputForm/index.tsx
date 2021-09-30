@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-use-before-define */
+=======
+>>>>>>> main
 import React from 'react';
 import { Control, Controller } from 'react-hook-form';
 import { TextInputProps } from 'react-native';
 
+<<<<<<< HEAD
 import { Input } from '../Input';
 import * as S from './styles';
+=======
+import { Input } from '../Input'
+
+import { Container, Error } from './styles';
+>>>>>>> main
 
 interface Props extends TextInputProps {
   control: Control;
@@ -15,6 +24,7 @@ interface Props extends TextInputProps {
 
 export function InputForm({ control, name, error, ...rest }: Props) {
   return (
+<<<<<<< HEAD
     <S.Container>
       <Controller
         control={control}
@@ -27,3 +37,21 @@ export function InputForm({ control, name, error, ...rest }: Props) {
     </S.Container>
   );
 }
+=======
+    <Container>
+      <Controller 
+        control={control}
+        name={name}
+        render={({ field: { onChange, value } }) => (
+          <Input
+            onChangeText={onChange}
+            value={value}
+            {...rest}
+          />
+        )}
+      />
+      { error && <Error>{ error }</Error> }
+    </Container>
+  )
+}
+>>>>>>> main

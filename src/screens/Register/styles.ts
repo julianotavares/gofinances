@@ -3,41 +3,72 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
+<<<<<<< HEAD
   background: ${({ theme }) => theme.colors.background};
 `;
 
 export const Header = styled.View`
   background: ${({ theme }) => theme.colors.primary};
+=======
+  background-color: ${({ theme }) => theme.colors.background};
+`;
+
+export const Header = styled.View`
+  background-color: ${({ theme }) => theme.colors.primary};
+>>>>>>> main
 
   width: 100%;
   height: ${RFValue(113)}px;
 
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 
   padding-bottom: 18px;
+=======
+  padding-bottom: 19px;
+>>>>>>> main
 `;
 
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.fonts.regular};
+<<<<<<< HEAD
   font-size: ${RFValue(18)}px;
   color: ${({ theme }) => theme.colors.shape};
+=======
+  color: ${({ theme }) => theme.colors.shape};
+
+  font-size: ${RFValue(18)}px;
+>>>>>>> main
 `;
 
 export const Form = styled.View`
   flex: 1;
   justify-content: space-between;
+<<<<<<< HEAD
   width: 100%;
 
+=======
+
+  width: 100%;
+>>>>>>> main
   padding: 24px;
 `;
 
 export const Fields = styled.View``;
 
+<<<<<<< HEAD
 export const TransactionsTypes = styled.View`
+=======
+export const TransactionTypes = styled.View`
+>>>>>>> main
   flex-direction: row;
   justify-content: space-between;
 
   margin-top: 8px;
   margin-bottom: 16px;
+<<<<<<< HEAD
 `;
+=======
+`;
+>>>>>>> main

@@ -1,6 +1,10 @@
 import React from 'react';
 
+<<<<<<< HEAD
 import * as S from './styles';
+=======
+import { Container, Title, Amount } from './styles';
+>>>>>>> main
 
 interface Props {
   title: string;
@@ -8,6 +12,7 @@ interface Props {
   color: string;
 }
 
+<<<<<<< HEAD
 export function HistoryCard({ title, amount, color }: Props) {
   return (
     <S.Container color={color}>
@@ -16,3 +21,13 @@ export function HistoryCard({ title, amount, color }: Props) {
     </S.Container>
   );
 }
+=======
+export function HistoryCard({ color, title, amount }: Props) {
+  return (
+    <Container color={color}>
+      <Title>{title}</Title>
+      <Amount>{amount}</Amount>
+    </Container>
+  )
+}
+>>>>>>> main
